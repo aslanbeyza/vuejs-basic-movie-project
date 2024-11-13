@@ -1,24 +1,17 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-  <div>
-   beyza
+  <div id="id">
+    <!-- Ana sayfaya gitmek için RouterLink -->
+    <RouterLink to="/">Home</RouterLink> |
+    <RouterLink to="/about">About</RouterLink> |
+    <RouterLink to="/brazil">Brazil</RouterLink> |
+    <RouterLink to="/hawaii">Hawaii</RouterLink> |
+    <RouterLink to="/jamaica">jamaica</RouterLink> |
+    <RouterLink to="/panama">panama</RouterLink> |
+  </div>
+
+  <div class="continer">
+    <router-view />
   </div>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>

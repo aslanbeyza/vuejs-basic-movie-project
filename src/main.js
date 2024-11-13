@@ -1,17 +1,7 @@
 import { createApp } from 'vue';
-import { createRouter, createWebHistory } from 'vue-router';
 import './style.css';
 import App from './App.vue';
-
-// Router yapılandırması
-const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-        {path:'/',name:'home',component:Home}
-
-    ] // Burada rotalarınızı tanımlayabilirsiniz
-});
-
+import router from '../src/router/index.js';
 
 // Vue uygulamasını oluşturma ve router'ı kullanma
 createApp(App)
